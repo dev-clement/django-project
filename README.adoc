@@ -1,0 +1,83 @@
+# Django REST Framework
+:toc:
+:sectnums:
+
+In this project I will tackle the Django Rest Framework application in order to learn it.
+
+## Before anything
+
+As DRF (**D**jango **R**est **F**ramework) is a package related to `Django`, as Django is in Python, the first thing we need to do is creating its own dirtual environment.
+
+You can create the virtual environment using the following commands:
+
+```bash
+$> python -m pip install venv
+```
+
+The first command will install the `venv` package, that is used to create the virtual environment,
+
+Once that's done, we can create our own virtual environment using the command above:
+
+```bash
+$> python -m venv venv
+```
+
+Depending on your operating system, you will have several command to activate it:
+
+### Activating the virtual environment on Windows
+
+You can avtivate the virtual environment in Windows using the following command:
+
+```bash
+$> .\venv\Scripts\activate
+```
+### Activating the virtual environment in Linux
+
+You can activate the virtual environment in Linux using the following command:
+
+```bash
+$> source venv/bin/activate
+```
+
+## Install the needed package
+
+Once you have your virtual environment activated, you can then install the several requirements you needs, using `pip`, which is kind of easy:
+
+```bash
+$> pip install django==<version>
+```
+
+The command above will install django with a specified version
+
+```bash
+$> pip install djangorestframework==<version>
+```
+
+The command above will install django rest framework with a specified version.
+
+If you run the command above, don't forget to activate your virtual environment.
+
+### Save your requirements
+
+Using Pyhton, you have the possibility to store the package you need inside a file to recover them later if someone needs to install your application, that's can be done using the following command:
+
+```bash
+$> pip freeze > requirements.txt
+```
+
+The above command will list all the package installed with their version, the `>` operator will redirect the content of the command inside a file named `requirements.txt`.
+
+### Recover requirements
+
+If you are inside a new system and you want your application to be installed _easily_ you just have to do the following command:
+
+```bash
+$> pip install -r requirements.txt
+```
+
+This way, if you are using a version control such as git, you won't need to push your virtual environment, you will just need to push a simple txt file that will contains all your requirements.
+
+## Django REST Framework
+
+Django Rest framework is a powerful and flexible toolkit for building REST Web APIs.
+
